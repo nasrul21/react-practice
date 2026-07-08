@@ -3,6 +3,7 @@ export default function AccordionItem({ item, isOpen = false, onItemClick = () =
     <div style={styles.accordionItem}>
       <h4 style={styles.accordionTitle} onClick={onItemClick}>
         {item.title}
+        <span style={styles.accordionIcon}>{isOpen ? '-' : '+'}</span>
       </h4>
       <div style={{ ...styles.accordionSlider, gridTemplateRows: isOpen ? '1fr' : '0fr' }}>
         <div style={{ overflow: 'hidden' }}>
@@ -17,7 +18,8 @@ export default function AccordionItem({ item, isOpen = false, onItemClick = () =
 
 const styles = {
   accordionItem: {
-    borderBottom: '1px solid var(--primary)',
+    position: 'relative',
+    borderBottom: '1px solid var(--primary)'
   },
   accordionTitle: {
     margin: 0,
@@ -30,6 +32,10 @@ const styles = {
     transition: 'grid-template-rows 0.3s ease-in-out'
   },
   accordionContent: {
-    margin: '16px',
+    margin: '16px'
   },
+  accordionIcon: {
+    position: 'absolute',
+    right: '16px'
+  }
 }
