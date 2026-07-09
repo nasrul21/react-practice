@@ -21,7 +21,7 @@ export default function App() {
               <div className="card-subtitle">
                 {routes[path].title}
               </div>
-              <div className="card-text">
+              <div className="card-text" style={{ color: 'var(--primary)' }}>
                 {routes[path].appName}
               </div>
             </div>
