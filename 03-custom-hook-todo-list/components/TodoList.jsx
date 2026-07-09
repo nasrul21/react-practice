@@ -33,7 +33,7 @@ const TodoList = () => {
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <button type="submit" disabled={newTodo.trim() !== ''}>Add</button>
+        <button type="submit" disabled={newTodo.trim() === ''}>Add</button>
       </form>
       <ul>
         {todos?.map((todo) => (
