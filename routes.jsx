@@ -1,6 +1,7 @@
 import { default as PublicHolidayApp } from "./01-public-holiday-app/App";
 import { default as AccordionApp } from './02-accordion/App';
 import { default as TodoListApp } from './03-custom-hook-todo-list/App';
+import { default as MemoryGame } from './04-memory-game/App';
 
 export default {
   '01-public-holiday-app': {
@@ -17,5 +18,10 @@ export default {
     title: "Day 03",
     appName: "Custom Hook Todo List",
     component: TodoListApp
+  },
+  '04-memory-game': {
+    title: "Day 04",
+    appName: "Memory Game",
+    component: MemoryGame
   }
 }
