@@ -2,6 +2,7 @@ import { default as PublicHolidayApp } from "./01-public-holiday-app/App";
 import { default as AccordionApp } from './02-accordion/App';
 import { default as TodoListApp } from './03-custom-hook-todo-list/App';
 import { default as MemoryGame } from './04-memory-game/App';
+import { default as TopArticlesHackerNews } from './05-top-articles-hacker-news/App';
 
 export default {
   '01-public-holiday-app': {
@@ -23,5 +24,10 @@ export default {
     title: "Day 04",
     appName: "Memory Game",
     component: MemoryGame
+  },
+  '05-top-articles-hacker-news': {
+    title: "Day 05",
+    appName: "Top 10 Articles Hacker News",
+    component: TopArticlesHackerNews
   }
 }
