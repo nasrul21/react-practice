@@ -3,6 +3,7 @@ import { default as AccordionApp } from './02-accordion/App';
 import { default as TodoListApp } from './03-custom-hook-todo-list/App';
 import { default as MemoryGame } from './04-memory-game/App';
 import { default as TopArticlesHackerNews } from './05-top-articles-hacker-news/App';
+import { default as DragAndDropTodoList } from './08-09-drag-and-drop-todo-list/App';
 
 export default {
   '01-public-holiday-app': {
@@ -29,5 +30,10 @@ export default {
     title: "Day 05",
     appName: "Top 10 Articles Hacker News",
     component: TopArticlesHackerNews
+  },
+  '08-09-drag-and-drop-todo-list': {
+    title: "Day 08-09",
+    appName: "Drag and Drop Todo List",
+    component: DragAndDropTodoList
   }
 }

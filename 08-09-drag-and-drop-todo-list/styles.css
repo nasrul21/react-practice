@@ -1,0 +1,42 @@
+.form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.form-container input {
+  min-width: 240px;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.column {
+  width: 280px;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.item {
+  /* width: 100%; */
+  cursor: grab;
+  background-color: #FFFFFF;
+}
+
+.column-trash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
