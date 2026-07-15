@@ -5,6 +5,7 @@ import { default as MemoryGame } from './04-memory-game/App';
 import { default as TopArticlesHackerNews } from './05-top-articles-hacker-news/App';
 import { default as DragAndDropTodoList } from './08-09-drag-and-drop-todo-list/App';
 import { default as MovieSearchPage } from './10-movie-search-page/App';
+import { default as TimerApp } from './11-12-timer-app/App';
 
 export default {
   '01-public-holiday-app': {
@@ -41,5 +42,10 @@ export default {
     title: "Day 10",
     appName: "Movie Search Page",
     component: MovieSearchPage
+  },
+  '11-12-timer-app': {
+    title: "Day 11-12",
+    appName: "Timer App",
+    component: TimerApp
   }
 }
